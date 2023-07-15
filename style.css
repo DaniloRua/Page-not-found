@@ -9,12 +9,13 @@
 }
 
 body{
+    margin: 1rem;
     background: url(./assets/3d-dark-grunge-display-background-with-smoky-atmosphere.jpg) no-repeat center/cover;
 }
 
 #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
 }
@@ -75,4 +76,12 @@ aside{
 .error-number {
     font-size: 10rem;
     font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    #app {
+        margin: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
